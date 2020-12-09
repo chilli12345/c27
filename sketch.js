@@ -24,12 +24,12 @@ function setup() {
 	//Create the Bodies Here.
 	roof=new Roof(400,100,500,40);
 	bob1=new Bob(300,300,25);
-	bob2=new Bob(250,300,25);
-	bob3=new Bob(350,300,25);
+	bob2=new Bob(350,300,25);
+	bob3=new Bob(400,300,25);
 	bob4=new Bob(450,305,25);
 	bob5=new Bob(500,305,25);
-	rope1=new Rope(bob2.body,roof.body,-100,0);
-	rope2=new Rope(bob1.body,roof.body,-50,0);
+	rope1=new Rope(bob1.body,roof.body,-100,0);
+	rope2=new Rope(bob2.body,roof.body,-50,0);
 	rope3=new Rope(bob3.body,roof.body,0,0);
 	rope4=new Rope(bob4.body,roof.body,50,0);
 	rope5=new Rope(bob5.body,roof.body,100,0);
@@ -65,7 +65,7 @@ function draw() {
 
 	function keyPressed() { 
 	if (keyCode === LEFT_ARROW) {
-		 Matter.Body.applyForce(bob2.body,bob2.body.position,{x:-100,y:-50});
+		 Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-100,y:-50});
 	 } 
 	} 
 
